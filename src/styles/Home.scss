@@ -1,0 +1,63 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #e3e3e3;
+}
+
+.catBox {
+  width: 350px;
+  height: 350px;
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  border-radius: 33px;
+  box-shadow: 20px 20px 20px rgb(60, 57, 57);
+  justify-content: center;
+  margin: 15px;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.catBox:hover {
+  box-shadow: 20px 20px 20px rgb(3, 251, 94);
+}
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+.App-dad {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.circle {
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3%;
+  height: 37px;
+  float: right;
+  color: black;
+  margin: 29px 0px 0px 0px;
+}
+
+.head {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.circle-cost {
+  float: right;
+  margin: 37px 57px 0px 17px;
+  color: black;
+}

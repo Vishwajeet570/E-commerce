@@ -1,0 +1,50 @@
+.container-father {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #e3e3e3;
+}
+.added img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+.heading {
+  font-weight: bold;
+}
+span {
+  margin: 10px;
+}
+.hd {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid black;
+}
+.pc {
+  margin-left: 144px;
+}
+.rs {
+  margin-left: 80px;
+}
+.quant {
+  margin-left: 58px;
+}
+.ckhd {
+  box-shadow: 10px 10px 10px black;
+  padding: 80px;
+  border-radius: 10%;
+  background-color: white;
+}
+
+.t-head {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+h4 {
+  color: black !important;
+}
