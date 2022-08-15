@@ -64,3 +64,23 @@
 .rs-btn-primary.rs-btn-blue {
   background-color: #0c0c0c !important;
 }
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .filter {
+    border-right: 0px solid black;
+    border-bottom: 2px solid black;
+    height: 251px;
+  }
+  .container-son {
+    margin-left: 0px;
+    margin-top: 80px;
+  }
+  .nm {
+    // margin-bottom: 792px;
+    position: initial;
+    margin-bottom: 0px;
+  }
+}

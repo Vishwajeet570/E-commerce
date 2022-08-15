@@ -12,6 +12,7 @@ const Checkout = () => {
   const abc = useProfile();
   const obj = abc[0];
   const setObj = abc[1];
+
   // console.log(obj);
   // useEffect(() => {
   //   localStorage.setItem('count', JSON.stringify(obj.count));
@@ -102,7 +103,8 @@ const Checkout = () => {
       setInd(order);
     }
   });
-
+  const mediaQuery = window.matchMedia('(max-width: 630px)');
+  console.log(mediaQuery.matches);
   return (
     <div className="n-box">
       <div className="t-head">
@@ -135,7 +137,12 @@ const Checkout = () => {
 
               <img src={item.thumbnail} alt="img" />
 
-              <span className="nmee">{item.name.padEnd(20, '_')}</span>
+              <span className="nmee">
+                {!mediaQuery.matches
+                  ? item.name.padEnd(22, '_')
+                  : item.name.split(' ')[0]}
+              </span>
+              {/* {item.name.padEnd(20, '_')} */}
               <span>${item.price} </span>
 
               <span className="rs">{ind[no] > 0 ? ind[no] : ''}</span>
