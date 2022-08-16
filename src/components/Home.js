@@ -20,9 +20,11 @@ const Home = () => {
     <div className="App-dad">
       <div className="head">
         <Link to="/checkout">
-          <div className="circle-cost">${obj.cost}</div>
           <div className="circle">{obj.count}</div>
         </Link>
+        <div className="circle-cost">
+          <Link to="/checkout">${obj.cost}</Link>
+        </div>
       </div>
       <div className="App">
         {catio.map(item => (

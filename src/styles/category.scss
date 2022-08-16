@@ -26,12 +26,13 @@
   z-index: 1;
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+  justify-content: end;
 }
 .cst {
   float: right;
-  margin: 37px 57px 0px 17px;
+  margin: 37px 20px 0px 0px;
   color: black;
 }
 .cnt {
@@ -40,11 +41,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3%;
+  width: 37px;
   height: 37px;
   float: right;
   color: black;
-  margin: 29px 0px 0px 0px;
+  margin: 28px 18px 0px 0px;
 }
 .rs-checkbox label {
   margin: 0px 123px 20px 27px !important;

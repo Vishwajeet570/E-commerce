@@ -104,14 +104,16 @@ const Checkout = () => {
     }
   });
   const mediaQuery = window.matchMedia('(max-width: 630px)');
-  console.log(mediaQuery.matches);
+
   return (
     <div className="n-box">
       <div className="t-head">
         <Link to="/checkout">
-          <div className="cst">${obj.cost}</div>
           <div className="cnt">{obj.count}</div>
         </Link>
+        <div className="cst">
+          <Link to="/checkout">${obj.cost}</Link>
+        </div>
       </div>
       <div className="container-father">
         <div>

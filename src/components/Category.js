@@ -113,9 +113,11 @@ const Category = () => {
     <div className="main-box">
       <div className="cont-head">
         <Link to="/checkout">
-          <div className="cst">${obj.cost}</div>
           <div className="cnt">{obj.count}</div>
         </Link>
+        <div className="cst">
+          <Link to="/checkout">${obj.cost}</Link>
+        </div>
       </div>
       <div className="container">
         <div className="filter">

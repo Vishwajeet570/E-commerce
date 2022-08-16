@@ -42,7 +42,8 @@ span {
   z-index: 1;
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: end;
   width: 100%;
 }
 h4 {
@@ -72,14 +73,8 @@ h4 {
   .hd {
     margin-left: 30px;
   }
-  .cnt {
-    width: 7%;
-  }
 }
 @media screen and (max-width: 300px) {
-  .cnt {
-    width: 15%;
-  }
   .ckhd {
     height: 50%;
     width: 100%;
